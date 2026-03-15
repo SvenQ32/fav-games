@@ -61,7 +61,7 @@ export const pagesConfig: PageItem[] = [
       {
         id: 4,
         title: 'Paper Mario: Color Splash',
-        category: 'Strategy',
+        category: 'leuke story, uniek, ook leuke combat',
         rating: 7,
         iconPath: '/fav-games/images/papermariocolorsplash.jpg',
       },
