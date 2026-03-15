@@ -1,3 +1,3 @@
-https://svenq32.github.io/fav-games/
+https://kamerplant24.github.io/fav-games/
 
 figma - main google acc
