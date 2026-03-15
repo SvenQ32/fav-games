@@ -28,7 +28,7 @@ export const pagesConfig: PageItem[] = [
   {
     type: 'frontpage',
     background: '#000000',
-    profilePicture: '/public/images/crab-rave.gif', // Default profile picture
+    profilePicture: 'images/crab-rave.gif', // Default profile picture
     title: 'Mi Games',
     description: 'mijn favo games',
   },
@@ -42,14 +42,14 @@ export const pagesConfig: PageItem[] = [
         title: 'Pokkén Tournament',
         category: 'de og pokemon game',
         rating: 9.8,
-        iconPath: '/images/pokkentournament.jpg', // Empty = use default Ethereum icon
+        iconPath: '@/images/pokkentournament.jpg', // Empty = use default Ethereum icon
       },
       {
         id: 2,
         title: 'Poképark',
         category: 'gwn klassieker',
         rating: 9,
-        iconPath: '/images/pokepark.jpg',
+        iconPath: '@/assets/pokepark.jpg',
       },
       {
         id: 3,
