@@ -17,10 +17,12 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 24   # <-- updated to Node24
+          node-version: 24   # Use Node24 to avoid deprecation warnings
 
       - run: npm ci
-      - run: npm run build
+
+      - name: Build site
+        run: npx vite build   # Use npx to avoid Vite permission issues
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -31,13 +33,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/deploy-pages@v4
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        
