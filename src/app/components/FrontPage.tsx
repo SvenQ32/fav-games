@@ -63,11 +63,11 @@ export function FrontPage({ profilePicture, title, description }: FrontPageProps
           transition={{ delay: 0.8, duration: 0.5 }}
           className="mt-8 flex items-center gap-2 text-white/50 text-sm"
         >
-          <span>Press</span>
+          <span>Druk</span>
           <kbd className="px-2 py-1 bg-white/10 rounded border border-white/20">→</kbd>
-          <span>or</span>
+          <span>of</span>
           <kbd className="px-2 py-1 bg-white/10 rounded border border-white/20">D</kbd>
-          <span>to continue</span>
+          <span>om verder te gaan</span>
         </motion.div>
       </motion.div>
     </div>
