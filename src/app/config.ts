@@ -30,7 +30,7 @@ export const pagesConfig: PageItem[] = [
     background: '#000000',
     profilePicture: '/fav-games/images/crab-rave.gif', // Default profile picture
     title: 'Mi Games',
-    description: 'mijnv favo games',
+    description: 'mijn favo games',
   },
   {
     title: "Wii U",
