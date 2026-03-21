@@ -12,6 +12,30 @@ export default function App() {
   const totalPages = pagesConfig.length;
   const currentPageItem = pagesConfig[currentPage];
 
+  // Preload all images on mount
+  useEffect(() => {
+    const imagesToPreload: string[] = [];
+    
+    // Collect all game icon paths and profile pictures
+    pagesConfig.forEach(page => {
+      if (page.type === 'frontpage') {
+        imagesToPreload.push(page.profilePicture);
+      } else {
+        page.games.forEach(game => {
+          if (game.iconPath) {
+            imagesToPreload.push(game.iconPath);
+          }
+        });
+      }
+    });
+
+    // Preload images
+    imagesToPreload.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   const goToNextPage = () => {
     setCurrentPage((prev) => (prev + 1) % totalPages);
   };
